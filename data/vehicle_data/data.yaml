@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['bus', 'car', 'motorbike', 'truck']
+
+roboflow:
+  workspace: vehicle
+  project: vehicle-vietnam-cantho-2gxc8
+  version: 19
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/vehicle/vehicle-vietnam-cantho-2gxc8/dataset/19

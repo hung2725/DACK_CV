@@ -1,0 +1,16 @@
+tracker_type: bytetrack
+
+# Ngưỡng confidence
+track_high_thresh: 0.5        # Confidence cao → đưa thẳng vào track
+track_low_thresh: 0.1         # Confidence thấp → vẫn thử ghép với track cũ
+new_track_thresh: 0.6         # Ngưỡng tạo track mới
+
+# Tăng track_buffer lên để giữ track sống lâu hơn, tránh ID nhảy
+track_buffer: 60              # Mặc định 30; tăng để xe bị che vẫn giữ ID
+
+# Ngưỡng IoU ghép detection với track
+match_thresh: 0.8
+
+# Bắt buộc với ultralytics phiên bản mới
+fuse_score: true              # Kết hợp confidence score vào IoU distance
+
